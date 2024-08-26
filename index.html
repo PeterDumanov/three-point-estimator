@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-point Estimation Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Three-point Estimation Calculator</h1>
+
+    <div class="container">
+        <div class="column">
+            <h3>Name</h3>
+            <input type="text" class="input-field name-field" placeholder="Member 1" data-index="1">
+            <input type="text" class="input-field name-field" placeholder="Member 2" data-index="2">
+            <input type="text" class="input-field name-field" placeholder="Member 3" data-index="3">
+            <input type="text" class="input-field name-field" placeholder="Member 4" data-index="4">
+            <input type="text" class="input-field name-field" placeholder="Member 5" data-index="5">
+            <input type="text" class="input-field name-field" placeholder="Member 6" data-index="6">
+            <input type="text" class="input-field name-field" placeholder="Member 7" data-index="7">
+            <input type="text" class="input-field name-field" placeholder="Member 8" data-index="8">
+            <input type="text" class="input-field name-field" placeholder="Member 9" data-index="9">
+            <input type="text" class="input-field name-field" placeholder="Member 10" data-index="10">
+        </div>
+        <div class="column">
+            <h3>O</h3>
+            <input type="text" class="input-field o-field" placeholder="The best-case estimate 1">
+            <input type="text" class="input-field o-field" placeholder="The best-case estimate 2">
+            <input type="text" class="input-field o-field" placeholder="The best-case estimate 3">
+            <input type="text" class="input-field o-field" placeholder="The best-case estimate 4">
+            <input type="text" class="input-field o-field" placeholder="The best-case estimate 5">
+            <input type="text" class="input-field o-field" placeholder="The best-case estimate 6">
+            <input type="text" class="input-field o-field" placeholder="The best-case estimate 7">
+            <input type="text" class="input-field o-field" placeholder="The best-case estimate 8">
+            <input type="text" class="input-field o-field" placeholder="The best-case estimate 9">
+            <input type="text" class="input-field o-field" placeholder="The best-case estimate 10">
+        </div>
+        <div class="column">
+            <h3>M</h3>
+            <input type="text" class="input-field m-field" placeholder="The most likely estimate 1">
+            <input type="text" class="input-field m-field" placeholder="The most likely estimate 2">
+            <input type="text" class="input-field m-field" placeholder="The most likely estimate 3">
+            <input type="text" class="input-field m-field" placeholder="The most likely estimate 4">
+            <input type="text" class="input-field m-field" placeholder="The most likely estimate 5">
+            <input type="text" class="input-field m-field" placeholder="The most likely estimate 6">
+            <input type="text" class="input-field m-field" placeholder="The most likely estimate 7">
+            <input type="text" class="input-field m-field" placeholder="The most likely estimate 8">
+            <input type="text" class="input-field m-field" placeholder="The most likely estimate 9">
+            <input type="text" class="input-field m-field" placeholder="The most likely estimate 10">
+        </div>
+        <div class="column">
+            <h3>P</h3>
+            <input type="text" class="input-field p-field" placeholder="The worst-case estimate 1">
+            <input type="text" class="input-field p-field" placeholder="The worst-case estimate 2">
+            <input type="text" class="input-field p-field" placeholder="The worst-case estimate 3">
+            <input type="text" class="input-field p-field" placeholder="The worst-case estimate 4">
+            <input type="text" class="input-field p-field" placeholder="The worst-case estimate 5">
+            <input type="text" class="input-field p-field" placeholder="The worst-case estimate 6">
+            <input type="text" class="input-field p-field" placeholder="The worst-case estimate 7">
+            <input type="text" class="input-field p-field" placeholder="The worst-case estimate 8">
+            <input type="text" class="input-field p-field" placeholder="The worst-case estimate 9">
+            <input type="text" class="input-field p-field" placeholder="The worst-case estimate 10">
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button onclick="clearFields()">Clear</button>
+        <button onclick="calculateResult()">Result</button>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="resultPopup">
+        <h2>Estimate:</h2>
+        <h1 id="resultValue">Result</h1>
+        <button onclick="closePopup()">Close</button>
+        <button onclick="copyToClipboard()">Copy</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
