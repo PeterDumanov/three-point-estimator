@@ -30,16 +30,37 @@ h1 {
     width: 100%;
     margin-bottom: 10px;
 }
+
+button {
+    border-radius: 10px;
+}
+/* Add a class for the 'Result' button */
+button.result-btn {
+    width: 150px; /* Make it larger */
+    height: 50px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+}
+
+/* Add a class for the 'Clear' button */
+button.clear-btn {
+    width: 80px; /* Make it smaller */
+    height: 40px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+}
+
+/* Adjust the space between the buttons */
 .button-container {
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-between; /* Ensure there's more space between buttons */
+    gap: 500px; /* Add gap between buttons */
     max-width: 800px;
     margin: 20px auto 0 auto;
 }
-button {
-    width: 100px;
-    padding: 10px;
-    font-size: 16px;
-}
+
 #resultPopup {
     display: none;
     position: fixed;
